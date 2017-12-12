@@ -30,9 +30,9 @@ Examples:
     // And now you can test all interactions.
     // Verify the correct url has been called
     Mockito.verify(wsClientMockMachine.wsClientMock).url("https://myserver.com")
-    // Veridy some headers...
+    // Verify some headers...
     Mockito.verify(wsClientMockMachine.wsRequestMock).withAuth("username", "password", WSAuthScheme.BASIC)
-    // verify that the correct http method has been called - and also make sure the body is correct
+    // Verify that the correct http method has been called - and also make sure the body is correct
     Mockito.verify(wsClientMockMachine.wsRequestMock).post(Matchers.eq("""some_content"""))(Matchers.any())
 
 
