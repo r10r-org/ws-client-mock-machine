@@ -3,8 +3,8 @@ WsClientMockMachine - simple mocking of Play WsClient
 
 [![Build Status](https://travis-ci.org/r10r-org/wsclientmockmachine.svg?branch=master)](https://travis-ci.org/r10r-org/wsclientmockmachine)
 
-The problem:
-------------
+The problem
+-----------
 If you are using Play then you'll also likely use Play's nice http library WsClient.
 And because you are a professional you do test your code - don't you?
 
@@ -13,13 +13,15 @@ mock an interaction, but you have to mock a chain - from url() - to request - to
 
 Well. You can do that, but that is annoying.
 
-The solution:
--------------
+The solution
+------------
 WsClientMockMachine! It is basically a read-to-use mock for wsClient. It has all basic
 interactions already mocked and you can use it straight away.
 
-Examples:
----------
+Examples
+--------
+
+    import wsclientmockmachine.api.WsClientMockMachine
 
     val wsClientMockMachine = WsClientMockMachine()
 
@@ -37,9 +39,29 @@ Examples:
     // Verify that the correct http method has been called - and also make sure the body is correct
     Mockito.verify(wsClientMockMachine.wsRequestMock).post(Matchers.eq("""some_content"""))(Matchers.any())
 
+Compatibility
+-------------
 
-Other solutions:
-----------------
+- 1.2.0 => Play 2.6.x / Mockito 2.x
+
+
+Other solutions
+---------------
 
  - MockWs (https://github.com/leanovate/play-mockws)
- - Wiremock (http://wiremock.org).
+ - Wiremock (http://wiremock.org)
+
+
+Release process
+---------------
+
+Prerequisites:
+
+- gpg installed with a proper public key for signing
+- Proper Sonatype credentials in ~/.sbt/0.13/sonatype.sbt
+
+Release:
+
+    > sbt release
+
+
