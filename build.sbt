@@ -12,6 +12,8 @@ val playVersion = "2.6.9"
 
 fork := true
 
+useGpg := true
+
 resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 libraryDependencies ++= Seq(
