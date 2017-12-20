@@ -42,7 +42,7 @@ Examples
 Compatibility
 -------------
 
-- 1.2.0 => Play 2.6.x / Mockito 2.x
+- 1.2.1 => Play 2.6.x / Mockito 2.x
 
 
 Other solutions
