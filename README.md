@@ -1,6 +1,8 @@
 WsClientMockMachine - simple mocking of Play WsClient
 =====================================================
 
+[![Build Status](https://travis-ci.org/r10r-org/wsclientmockmachine.svg?branch=master)](https://travis-ci.org/r10r-org/wsclientmockmachine)
+
 The problem:
 ------------
 If you are using Play then you'll also likely use Play's nice http library WsClient.
@@ -39,5 +41,5 @@ Examples:
 Other solutions:
 ----------------
 
- - Use MockWs (https://github.com/leanovate/play-mockws)
- - Use Wiremock (http://wiremock.org).
+ - MockWs (https://github.com/leanovate/play-mockws)
+ - Wiremock (http://wiremock.org).
