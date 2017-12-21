@@ -5,18 +5,21 @@ WsClientMockMachine - simple mocking of Play WsClient
 
 The problem
 -----------
-If you are using Play then you'll also likely use Play's nice http library WsClient.
-And because you are a professional you do test your code - don't you?
+If you are using Play then you'll also likely use Play's nice http library [play-ws](https://github.com/playframework/play-ws).
+And because you are a professional software developer test your code - don't you?
 
-But testing play-ws in a mocked fashion is really cumbersome - mostly because you cannot simply
-mock an interaction, but you have to mock a chain - from url() - to request - to response.
+But writing mocked tests for play-ws is cumbersome. Mainly because
+you don't have to mock only one class and one call but an interaction chain -
+from WsClient.url() to WsRequest to a WsResponse. In between are a lot if
+methods like addHeader, addQueryParameter, withAuth, post and many many more.
 
-Well. You can do that, but that is annoying.
+Doing that setup for every single of your testcases is annoying and repetitive.
 
 The solution
 ------------
-WsClientMockMachine! It is basically a read-to-use mock for wsClient. It has all basic
-interactions already mocked and you can use it straight away.
+WsClientMockMachine a read-to-use mock for wsClient. It has all basic
+interactions already set up so you can use it straight away. Just drop
+WsClientMockMachine instead of wsClient and verify the interactions.
 
 Examples
 --------
