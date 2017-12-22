@@ -21,8 +21,8 @@ WsClientMockMachine a read-to-use mock for wsClient. It has all basic
 interactions already set up so you can use it straight away. Just drop
 WsClientMockMachine instead of wsClient and verify the interactions.
 
-Examples
---------
+Example
+-------
 
     import wsclientmockmachine.api.WsClientMockMachine
 
@@ -41,6 +41,10 @@ Examples
     Mockito.verify(wsClientMockMachine.wsRequestMock).withAuth("username", "password", WSAuthScheme.BASIC)
     // Verify that the correct http method has been called - and also make sure the body is correct
     Mockito.verify(wsClientMockMachine.wsRequestMock).post(Matchers.eq("""some_content"""))(Matchers.any())
+
+
+More exhaustive examples can be found here: https://github.com/r10r-org/ws-client-mock-machine/blob/master/src/test/scala/wsclientmockmachine/api/WsClientMockMachineSpec.scala
+
 
 Compatibility
 -------------
