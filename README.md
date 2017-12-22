@@ -51,7 +51,7 @@ Add it to your project
     libraryDependencies += "org.r10r" %% "ws-client-mock-machine" % "1.2.x"
 
 
-Note: Find the latest version (on maven central)[https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22ws-client-mock-machine_2.12%22]
+Note: Find the latest version [on maven central](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22ws-client-mock-machine_2.12%22)
 
 Compatibility
 -------------
