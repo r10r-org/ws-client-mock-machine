@@ -1,7 +1,7 @@
 WsClientMockMachine - simple mocking of Play WsClient
 =====================================================
 
-[![Build Status](https://travis-ci.org/r10r-org/wsclientmockmachine.svg?branch=master)](https://travis-ci.org/r10r-org/wsclientmockmachine)
+[![Build Status](https://travis-ci.org/r10r-org/ws-client-mock-machine.svg?branch=master)](https://travis-ci.org/r10r-org/ws-client-mock-machine)
 
 The problem
 -----------
