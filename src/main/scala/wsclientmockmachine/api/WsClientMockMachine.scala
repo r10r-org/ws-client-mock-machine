@@ -35,7 +35,7 @@ case class WsClientMockMachine(wsClientMock: WSClient = Mockito.mock(classOf[WSC
   // init WsRequest
   Mockito.when(wsRequestMock.addHttpHeaders(ArgumentMatchers.any())).thenReturn(wsRequestMock)
   Mockito.when(wsRequestMock.withAuth(ArgumentMatchers.any(), ArgumentMatchers.any(), ArgumentMatchers.any())).thenReturn(wsRequestMock)
-  Mockito.when(wsRequestMock.withBody(ArgumentMatchers.any())).thenReturn(wsRequestMock)
+  Mockito.when(wsRequestMock.withBody(ArgumentMatchers.any())(ArgumentMatchers.any())).thenReturn(wsRequestMock)
   Mockito.when(wsRequestMock.withHeaders(ArgumentMatchers.any())).thenReturn(wsRequestMock)
   Mockito.when(wsRequestMock.withHttpHeaders(ArgumentMatchers.any())).thenReturn(wsRequestMock)
   Mockito.when(wsRequestMock.withMethod(ArgumentMatchers.any())).thenReturn(wsRequestMock)
