@@ -21,28 +21,6 @@ WsClientMockMachine a read-to-use mock for wsClient. It has all basic
 interactions already set up so you can use it straight away. Just drop
 WsClientMockMachine instead of wsClient and verify the interactions.
 
-Aren't there other solutions?
------------------------------
-Yes. At least two excellent alternatives exist: [Play-MockWs](https://github.com/leanovate/play-mockws)
-and [Wiremock](http://wiremock.org).
-
-There are still reasons why we believe WsClientMockMachine is very different to these two options.
-
-Play-MockWs for instance is very good if you like to setup your tests in a play-like fashion using routers. It also does
-not use Mockito at all. This leads to a slightly different style of testing. And if you like that - go for it.
-Play-MockWs is very good - we also use it for some of our tests.
-
-Wiremock on the other hand is using a real http server to do stuff. This is very nice, but again - this is different
-to WsClientMockMachine. Wiremock testcases are more real integration tests with all pros and cons (like potentially
-more flaky and slow tests due to the need for real socket connections). But it allows to simulate the real thing
-and not only mocks. Also cool.
-
-And WsClientMockMachine? It's in between. It is 100% based on Mockito
-for testing. And there's no http traffic which means rock-solid tests.
-So - if you like Mockito, mocks and verifications then WsClientMockMachine is for you.
-We like Mockito - and WsClientMockMachine brings both world together with minimal setup.
-
-
 Example
 -------
 
@@ -79,6 +57,28 @@ Compatibility
 -------------
 
 - 1.2.x => Play 2.6.x / Mockito 2.x
+
+
+Aren't there other solutions?
+-----------------------------
+Yes. At least two excellent alternatives exist: [Play-MockWs](https://github.com/leanovate/play-mockws)
+and [Wiremock](http://wiremock.org).
+
+There are still reasons why we believe WsClientMockMachine is very different to these two options.
+
+Play-MockWs for instance is very good if you like to setup your tests in a play-like fashion using routers. It also does
+not use Mockito at all. This leads to a slightly different style of testing. And if you like that - go for it.
+Play-MockWs is very good - we also use it for some of our tests.
+
+Wiremock on the other hand is using a real http server to do stuff. This is very nice, but again - this is different
+to WsClientMockMachine. Wiremock testcases are more real integration tests with all pros and cons (like potentially
+more flaky and slow tests due to the need for real socket connections). But it allows to simulate the real thing
+and not only mocks. Also cool.
+
+And WsClientMockMachine? It's in between. It is 100% based on Mockito
+for testing. And there's no http traffic which means rock-solid tests.
+So - if you like Mockito, mocks and verifications then WsClientMockMachine is for you.
+We like Mockito - and WsClientMockMachine brings both world together with minimal setup.
 
 
 Release process
