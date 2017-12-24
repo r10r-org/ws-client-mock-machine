@@ -6,7 +6,7 @@ WsClientMockMachine - simple mocking of Play WsClient
 The problem
 -----------
 If you are using Play then you'll also likely use Play's nice http library [play-ws](https://github.com/playframework/play-ws).
-And because you are a professional software developer test your code - don't you?
+And because you are a professional software developer you test your code - don't you?
 
 But writing mocked tests for play-ws is cumbersome. Mainly because
 you don't have to mock only one class and one call but an interaction chain -
